@@ -1,7 +1,9 @@
 from to_string.to_string import Format
 
-fmt = Format(1)
+a = 5000.14
+fmt = Format()
 
-a = fmt.format(5)
-
-print(a)
+for i in range(1,4):
+    print(f"Number format #{i}")
+    print(fmt(a))
+    fmt.update(i)
